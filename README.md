@@ -1,5 +1,5 @@
 ## ioredisMq
-
+[![Build Status](https://travis-ci.org/zhangwinning/ioredisMq.svg?branch=master)](https://travis-ci.org/zhangwinning/ioredisMq)
 Another point to point mq's implementation based [ioredis](https://github.com/luin/ioredis)。inspired by [rsmp](https://github.com/smrchy/rsmq/blob/master/package.json)
 
 ## Install
