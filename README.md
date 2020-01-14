@@ -16,7 +16,6 @@ script_receiveMessage
     如果是 1 。 说明此消息是第一次被接收。然后设置第一次被接受的时间为 key2 .
 
 
-
 [https://dev.to/usamaashraf/using-events-in-nodejs-the-right-way-449b]
 
 ```js
@@ -28,8 +27,6 @@ add on more listeners to a particular event without tampering with the existing
 listeners or the part of the application where the event was fired from. 
 What we’re talking about is essentially the Observer pattern.
 
-
-
 ```
 event 的方式使的组件(函数)之间的更加解耦。
 
@@ -39,3 +36,50 @@ event 的方式使的组件(函数)之间的更加解耦。
 Event的方式。我用的不多，我认为的他最大的缺点就是把流程打乱了。你的代码爱怎么写怎么写，最后通过事件能串起来就行。Event适合模块之间通信用，而不适合控制流程。
 
 ``
+
+
+
+1 创建队列
+
+
+2 消费消息时
+消费消息时使用一个定时器功能。然后可以保证保证消息到来后，可以被实时消费掉。
+
+
+
+
+
+
+
+
+
+
+
+【更新】
+1. 创建 mq。
+2. 发送消息
+3. 接受消息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,9 @@
-const EventEmitter = require('events');
+const first = xs => xs[0]
+const rest = xs => xs.slice(1)
 
-class MyEmitter extends EventEmitter {}
+const sum = xs =>
+    xs.length === 0
+        ? 0
+        : first(xs) + sum(rest(xs));
 
-const myEmitter = new MyEmitter();
-
-myEmitter.emit('event');
-
-myEmitter.on('event', () => {
-    console.log('an event occurred!');
-});
+console.log(sum([1,2,3]))
